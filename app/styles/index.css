@@ -1,0 +1,21 @@
+@import './fonts.css';
+@import './theme.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-color: rgb(var(--color-border));
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-text-primary));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

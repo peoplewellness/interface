@@ -4,7 +4,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
-import { Flame, Zap, Users, BarChart3, Sparkles, Heart } from "lucide-react";
+import { Flame, Zap, BarChart3, Heart } from "lucide-react";
 
 export default function MonkzPage() {
   return (

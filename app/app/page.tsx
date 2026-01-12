@@ -180,11 +180,12 @@ const userMetrics = {
           ]
         }
       ],
+      duration: "12 months",
       startDate: "2025-01-01",
       endDate: "2026-01-01",
       status: "active",
       daysRemaining: 354,
-      utilizationRatio: "16%", // 760 / 4750
+      utilization: "16%", // 760 / 4750
       currentAPR: "16.2%", // Higher APR due to lower utilization
       claimHistory: [
         {
@@ -236,11 +237,12 @@ const userMetrics = {
           ]
         }
       ],
+      duration: "12 months",
       startDate: "2025-12-15",
       endDate: "2026-12-15",
       status: "active",
       daysRemaining: 369,
-      utilizationRatio: "27%", // 260 / 950
+      utilization: "27%", // 260 / 950
       currentAPR: "13.5%", // Moderate APR
       claimHistory: [
         {
@@ -809,7 +811,7 @@ export default function AppPage() {
                               <div className="grid grid-cols-2 gap-4 pt-3 border-t border-border mb-3">
                                 <div>
                                   <div className="text-xs text-text-muted mb-1">Utilization Ratio</div>
-                                  <div className="text-sm font-semibold text-accent">{policy.utilizationRatio}</div>
+                                  <div className="text-sm font-semibold text-accent">{policy.utilization}</div>
                                 </div>
                                 <div>
                                   <div className="text-xs text-text-muted mb-1">Current APR</div>

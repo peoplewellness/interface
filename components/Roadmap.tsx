@@ -2,7 +2,6 @@
 
 import { motion } from "motion/react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
 import { CheckCircle2, Circle, Clock } from "lucide-react";
 
 const roadmapPhases = [
@@ -123,9 +122,9 @@ export function Roadmap() {
                   {/* Status Indicator */}
                   {isInProgress && (
                     <div className="absolute -top-3 left-4">
-                      <Badge className="bg-gradient-to-r from-primary to-primary-light text-background font-semibold shadow-lg animate-pulse border-0">
+                      <div className="px-3 py-1 rounded-full bg-gradient-to-r from-primary to-primary-light text-background font-semibold shadow-lg animate-pulse text-sm">
                         Now
-                      </Badge>
+                      </div>
                     </div>
                   )}
                   {isCompleted && (

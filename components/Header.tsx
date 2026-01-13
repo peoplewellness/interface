@@ -10,7 +10,6 @@ export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const isAppPage = pathname === "/app";
-  const isMonkzPage = pathname === "/monkz";
 
   return (
     <motion.header
@@ -48,14 +47,6 @@ export function Header() {
             >
               Whitepaper
             </a>
-            {!isMonkzPage && (
-              <a
-                href="/monkz"
-                className="text-text-secondary hover:text-primary transition-colors font-medium"
-              >
-                Monkz
-              </a>
-            )}
             {!isAppPage && (
               <a href="/app">
                 <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-background font-semibold shadow-lg hover:shadow-primary/50 transition-all">
@@ -94,15 +85,6 @@ export function Header() {
               >
                 Whitepaper
               </a>
-              {!isMonkzPage && (
-                <a
-                  href="/monkz"
-                  className="text-text-secondary hover:text-primary transition-colors font-medium py-2"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Monkz
-                </a>
-              )}
               {!isAppPage && (
                 <a href="/app" className="w-full">
                   <Button className="bg-gradient-to-r from-primary to-primary-light hover:from-primary-light hover:to-primary text-background font-semibold shadow-lg w-full">

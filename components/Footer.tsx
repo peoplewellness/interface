@@ -59,14 +59,6 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="/monkz"
-                    className="text-text-secondary hover:text-primary transition-colors"
-                  >
-                    Monkz
-                  </a>
-                </li>
-                <li>
-                  <a
                     href="/app"
                     className="text-text-secondary hover:text-primary transition-colors"
                   >
